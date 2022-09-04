@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/e-certificate/static/css/main.c82d1f52.css",
+    "main.js": "/e-certificate/static/js/main.f22ea36b.js",
+    "index.html": "/e-certificate/index.html",
+    "main.c82d1f52.css.map": "/e-certificate/static/css/main.c82d1f52.css.map",
+    "main.f22ea36b.js.map": "/e-certificate/static/js/main.f22ea36b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c82d1f52.css",
+    "static/js/main.f22ea36b.js"
+  ]
+}
