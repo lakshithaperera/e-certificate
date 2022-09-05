@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+:root{
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary:#7DF9FF;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255,255, 255, 0.6);
+  --color-highlight: #FF0090;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../public/image/bg-texture.png);
+  background-color: var(--color-bg);
+}
+hr{
+  width: 80%;
+  height: 0px;
+  border: none;
+  border-top: 1px solid var(--color-primary);
+}
+.home{
+  width: 80%;
+  
+}
+.home .icon{
+  width: 30px;
+  height: 30px;
+  color: var(--color-primary);
+  cursor: pointer;
+  background: var(--color-bg-variant);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+  border: 2px solid var(--color-bg-variant);
+}
+.home .icon:hover{
+  background: transparent;
+  color: var(--color-white);
+}
+.container .cards{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 80%;
+}
+
+.container .cards .card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+align-items: center;
+}
+.container .cards .card h5{
+  color: var(--color-light);
+  font-size: 14px;
+}
+
+.img{
+ width: 250px;
+ cursor: pointer;
+ transition: 0.4s;
+}
+
+.img:hover{
+  scale: 0.95;
+}
+
+@media (max-width:1300px){
+ .home, hr{
+  width: 90%;
+ }
+  .container .cards{
+    width: 90%;
+  }
+  .img{
+    width: 200px;
+   }
+ 
+}
+
+@media (max-width:900px){
+  .container{
+    height: 100%;
+    gap: 3rem;
+  }
+  .container .home{
+    margin-top: 4rem;
+    width: 30px;
+  }
+  .container .cards{
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .img{
+    width: 80vw;
+  }
+  hr{
+    margin-bottom: 6rem;
+  }
+
+}
